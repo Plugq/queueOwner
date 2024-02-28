@@ -1,0 +1,105 @@
+.title {
+    color: rgb(2, 2, 2);
+}
+.container{
+    margin-top: 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.button{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    
+    border-color: rgb(243, 167, 167);
+    border-radius: 10px;
+
+    
+}
+.button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 5px  ;
+    font-size:20px ;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.button a :hover {
+    color: rgb(253, 253, 253);
+   }
+
+.input{
+  margin-top: 5px;
+
+}
+.button2{
+    
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.button2 a {
+    color: black;
+    text-decoration: none;
+    margin-right: 5px  ;
+    padding: 10px;
+}
+
+
+.about{
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+
+.login{
+    margin-right: 0px;
+    margin-left: auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+
+}
+
+.textAbout{
+    padding: 10px;
+    margin-left : 10px; ;
+}
+
+.link{
+    font-size: 20px;
+    display: flex ;
+    font-family:monospace ;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    
+}
+.link2{
+    font-size: 16px;
+    display: flex ;
+    font-family:monospace ;
+    font-weight: 400;
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    
+}
+.appbar{
+    background: #353535;
+}
+
+.Textfiled{
+    margin-top: 10px ;
+}

@@ -84,7 +84,7 @@ const PersonalInfo = () => {
      // This will activate the closest `error.js` Error Boundary
      throw new Error('Failed to fetch data')
    }else{
-     router.push('/page_q/aboutme')
+     router.push('/page_q/bioname')
    }
   
    // return res.json()

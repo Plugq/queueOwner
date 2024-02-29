@@ -75,7 +75,7 @@ async function insertData() {
     // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }else{
-    router.push('/page_q/loginp')
+    router.push('/')
   }
  
   // return res.json()
@@ -95,7 +95,7 @@ async function updateData() {
     // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
   }else{
-    router.push('/page_q/loginp');
+    router.push('/');
   }
 }
 
@@ -110,7 +110,7 @@ async function updateData() {
          <TextField value={data ? data.email : ''} onChange={onchange} name='email' id="outlined-basic" label="email" variant="outlined" />
          
          <Button className={styles.button2} onClick={!editId ? insertData : updateData}> ตกลง</Button>
-         <Button className={styles.button2} > <Link href='/page_q/loginp'>ยกเลิก</Link></Button>
+         <Button className={styles.button2} > <Link href='/'>ยกเลิก</Link></Button>
 
     </div>
     )

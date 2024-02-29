@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 import style from '@/styles/home.module.css'
 
-const pages = [ <Link href="/page_q/reserv" className={style.link}>จองคิว</Link>,<Link href= "/page_q/historyReserv"className={style.link}> ประวัติการจอง </Link>,<Link href= "/page_q/showqueue"className={style.link}> ข้อมูลการจอง </Link>,<Link href= "/page_q/aboutme"className={style.link}> ข้อมูลส่วนตัว </Link>,<Link href= "/page_q/loginp"className={style.link}> Log Out </Link>,];
+const pages = [ <Link href="/page_q/reserv" className={style.link}>จองคิว</Link>,<Link href= "/page_q/historyReserv"className={style.link}> ประวัติการจอง </Link>,<Link href= "/page_q/showqueue"className={style.link}> ข้อมูลการจอง </Link>,<Link href= "/page_q/aboutme"className={style.link}> ข้อมูลส่วนตัว </Link>,<Link href= "/"className={style.link}> Log Out </Link>,];
 
 
 function ResponsiveAppBar() {
@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/page_q/loginp"
             sx={{
               mr: 4,
               display: { xs: 'none', md: 'flex' },

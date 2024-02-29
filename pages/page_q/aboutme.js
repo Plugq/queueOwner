@@ -1,4 +1,5 @@
 import styles from '@/styles/home.module.css'
+import Link from 'next/link';
 import { TextField , Button } from '@mui/material'
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -32,7 +33,7 @@ const PersonalInfo = () => {
      if(editId){
        // console.log(editId)
        async function getQueue(){
-         const res = await fetch(`http://localhost:3000/api/bio?editId=${editId}`, {
+         const res = await fetch(`http://localhost:3000/api/about?editId=${editId}`, {
            method: 'GET',
            headers: {
                // Authorization: `Bearer ${token}`,
@@ -70,7 +71,7 @@ const PersonalInfo = () => {
  // }
  
  async function insertData() {
-   const res = await fetch('http://localhost:3000/api/reserv_q', {
+   const res = await fetch('http://localhost:3000/api/about', {
      method: 'POST',
      headers: {
          // Authorization: `Bearer ${token}`,
@@ -92,7 +93,7 @@ const PersonalInfo = () => {
  async function updateData() {
    console.log('editId',editId)
    console.log(data)
-   const res = await fetch(`http://localhost:3000/api/reserv_q`, {
+   const res = await fetch(`http://localhost:3000/api/about`, {
      method: 'PUT',
      headers: {
          // Authorization: `Bearer ${token}`,
@@ -106,7 +107,7 @@ const PersonalInfo = () => {
      // This will activate the closest `error.js` Error Boundary
      throw new Error('Failed to fetch data')
    }else{
-     router.push('/page_q/aboutme')
+     router.push('/page_q/bioname')
    }
  }
 
@@ -121,7 +122,7 @@ const PersonalInfo = () => {
       {/* <TextField value={data ? data.queue_date : ''} onChange={onchange} name='queue_date' id="outlined-basic" label="วันที่" type='date' variant="outlined" /> */}
 
       <Button className={styles.button2} onClick={!editId ? insertData : updateData}> ตกลง</Button>
-      <Button className={styles.button2}> ยกเลิก</Button>
+      <Button className={styles.button2}> <Link href={'/page_q/bioname'}>ยกเลิก </Link></Button>
 
  </div>
  )

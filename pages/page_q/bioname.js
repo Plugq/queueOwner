@@ -77,7 +77,7 @@ export default function HistoryReserv() {
           <tr>
         
             <th>username</th>
-            <th>password</th>
+            
             <th>เบอร์โทร</th>
             <th>email</th>
             
@@ -85,12 +85,12 @@ export default function HistoryReserv() {
         </thead>
         <tbody>
           {
-            results && results.map(({ id,username, password, tel , email  }) => {
+            results && results.map(({ id,username, tel , email  }) => {
               return(
                 <tr>
                   
                   <td>{ username }</td>
-                  <td>{ password }</td>
+                  
                   <td>{ tel }</td>
                   <td>{ email }</td>
           

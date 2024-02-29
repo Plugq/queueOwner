@@ -116,7 +116,7 @@ const PersonalInfo = () => {
    
       <h1 className={styles.title}> แก้ไขข้อมูล</h1>
       <TextField value={data ? data.username : ''} onChange={onchange} name='username' id="outlined-basic" label="user" variant="outlined" />
-      <TextField value={data ? data.password : ''} onChange={onchange} name='password' id="outlined-basic" label="pass" variant="outlined" />
+      {/* <TextField value={data ? data.password : ''} onChange={onchange} name='password' id="outlined-basic" label="pass" variant="outlined" /> */}
       <TextField value={data ? data.tel : ''} onChange={onchange} name='tel' id="outlined-basic" label="เบอร์โทร" variant="outlined" />
       <TextField value={data ? data.email : ''} onChange={onchange} name='email' id="outlined-basic" label="email"  variant="outlined" />
       {/* <TextField value={data ? data.queue_date : ''} onChange={onchange} name='queue_date' id="outlined-basic" label="วันที่" type='date' variant="outlined" /> */}

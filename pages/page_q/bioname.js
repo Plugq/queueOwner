@@ -72,12 +72,11 @@ export default function HistoryReserv() {
         <h1>ข้อมูลส่วนตัว</h1>
        </div>
 
-       <table>
-        <thead>
+       <table className ={styles.table}>
+        <thead className={styles.thead}>
           <tr>
         
             <th>username</th>
-            
             <th>เบอร์โทร</th>
             <th>email</th>
             
@@ -87,7 +86,7 @@ export default function HistoryReserv() {
           {
             results && results.map(({ id,username, tel , email  }) => {
               return(
-                <tr>
+                <tr className={styles.tr}>
                   
                   <td>{ username }</td>
                   

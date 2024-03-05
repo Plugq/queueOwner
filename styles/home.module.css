@@ -103,3 +103,23 @@
 .Textfiled{
     margin-top: 10px ;
 }
+.table{
+    width: 100%;
+    border-color: black;
+    margin: 0;
+}
+
+.tr{
+    background-color: aliceblue;
+    border-color: black;
+    margin: 0;
+    align-items: center;
+
+}
+.thead{
+    width: 100% ;
+
+}
+.tbody{
+
+}

@@ -55,8 +55,8 @@ export default function HistoryReserv() {
         <h1>ข้อมูลการจอง</h1>
        </div>
 
-       <table>
-        <thead>
+       <table className ={styles.table}>
+        <thead className={styles.thead}>
           <tr>
             <th>คิว</th>
             <th>ชื่อ</th>
@@ -70,7 +70,7 @@ export default function HistoryReserv() {
           {
             results && results.map(({ queue_now,  queue_name, queue_lastname, queue_tel , queue_time  }) => {
               return(
-                <tr>
+                <tr className={styles.tr}>
                   <td>{ queue_now }</td>
                   <td>{ queue_name }</td>
                   <td>{ queue_lastname }</td>
